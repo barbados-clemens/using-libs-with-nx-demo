@@ -6,6 +6,6 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/packages/r-lib-one',
-  // globalSetup: '<rootDir>/setup.ts',
-  // globalTeardown: '<rootDir>/teardown.ts',
+  globalSetup: '<rootDir>/setup.js',
+  globalTeardown: '<rootDir>/teardown.js',
 };
