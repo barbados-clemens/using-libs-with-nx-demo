@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@using-libs-with-jest/ng-lib-one": ["packages/ng-lib-one/src/index.ts"],
+      "@using-libs-with-jest/ng-lib-two": ["packages/ng-lib-two/src/index.ts"],
+      "@using-libs-with-jest/r-lib-one": ["packages/r-lib-one/src/index.ts"],
+      "@using-libs-with-jest/r-lib-two": ["packages/r-lib-two/src/index.ts"],
+      "@using-libs-with-jest/testing-utils": [
+        "packages/testing-utils/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

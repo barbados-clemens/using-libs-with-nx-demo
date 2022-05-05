@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "packages/ng-lib-two/src",
+  "prefix": "using-libs-with-jest",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/ng-lib-two"],
+      "options": {
+        "jestConfig": "packages/ng-lib-two/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/ng-lib-two/**/*.ts",
+          "packages/ng-lib-two/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

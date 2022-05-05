@@ -1,0 +1,22 @@
+{
+  "sourceRoot": "packages/r-lib-one/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/r-lib-one/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/r-lib-one"],
+      "options": {
+        "jestConfig": "packages/r-lib-one/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

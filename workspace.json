@@ -1,4 +1,10 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "ng-lib-one": "packages/ng-lib-one",
+    "ng-lib-two": "packages/ng-lib-two",
+    "r-lib-one": "packages/r-lib-one",
+    "r-lib-two": "packages/r-lib-two",
+    "testing-utils": "packages/testing-utils"
+  }
 }

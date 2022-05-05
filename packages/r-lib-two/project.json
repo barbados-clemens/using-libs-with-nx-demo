@@ -1,0 +1,22 @@
+{
+  "sourceRoot": "packages/r-lib-two/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/r-lib-two/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/r-lib-two"],
+      "options": {
+        "jestConfig": "packages/r-lib-two/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
